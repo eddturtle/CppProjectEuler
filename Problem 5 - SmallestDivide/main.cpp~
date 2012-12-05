@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+	int limit = 10;
+	int test = 0;
+	bool check = false;
+	
+	while (check != true)
+	{
+		int x = 0;
+		for (int i = 1; i < limit; i++)
+		{
+			if (test % i == 0)
+			{
+				x++;
+			}
+		}
+		
+		if (x == limit)
+		{
+			printf("%d", test);
+			check = true;
+		}
+		else
+		{
+			test++;
+		}
+	
+	}
+	
+	return 0;
+}
